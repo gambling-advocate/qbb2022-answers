@@ -30,3 +30,17 @@ bedtools intersect -a $genefile2 -b $bedfile2 > intersecthw3.out
 awk '{if ($4 == "C") {print $5}}' intersecthw3.out | sort | uniq -
 ```
 
+3. The first portion of the awk statement skips the header, then printing columns 1 and 2  then the file variants.bed is created. genes.bed is then sorted and the bedtools closest tool is used to find matches.
+the code did not tab delimit and it did not properly sort variants.bed.
+
+```
+#!/bin/bash
+
+#USAGE: bash exercise3.sh input_VCF
+
+awk '/^#/{next} {print $1 "\t" $2-1 "\t" $2}' $1 | sort -k1,1 -k2,2n > variants.bed
+sort -k1,1 -k2,2n ~/data/bed_files/genes.bed > genes.sorted.bed
+bedtools closest -a variants.bed -b genes.sorted.bed
+```
+
+3. 10,293 variants and 4 genes.
