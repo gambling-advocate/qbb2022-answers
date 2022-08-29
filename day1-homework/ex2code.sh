@@ -1,0 +1,1 @@
+awk '{if ($4 == 1)}{print}}' chromHMM.E116_15_coreMarks_hg38lift_stateno.chr21.bed
