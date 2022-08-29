@@ -31,3 +31,10 @@ cut -f 4 chromHMM.E116_15_coreMarks_hg38lift_stateno.chr21.bed | sort -g | uniq 
 ```
 
 3. c) First I would take the difference between the 3rd and 2nd column for all the lines in all the different states. Then i would add those differences together and see which state had the largest sum.
+
+4. a) copying is the same each time...
+4. b) within the the integrated_call_samples.panel file I used the below code to find the counts, which were ASW:112; LWK:122; ACB:123; MSL:128; ESN:173; GWD:180; YRI:206;
+```
+cut -f 2,3 integrated_call_samples.panel| sort | uniq -c | sort -k 3
+```
+4. c) I suppose you could just use the counts that are also there and available for all the populations?
