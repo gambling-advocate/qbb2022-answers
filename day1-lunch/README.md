@@ -38,3 +38,26 @@ cut -f 4 chromHMM.E116_15_coreMarks_hg38lift_stateno.chr21.bed | sort -g | uniq 
 cut -f 2,3 integrated_call_samples.panel| sort | uniq -c | sort -k 3
 ```
 4. c) I suppose you could just use the counts that are also there and available for all the populations?
+
+5. a) copying is still the same...
+
+5. c) I used the following code on random_snippet.vcf to create HG00100.vcf:
+
+```
+cut -f 1-9,13 random_snippet.vcf > HG00100.vcf
+```
+
+5. c) I used the below code to find the values for 0|0:9514, 0|1: 127, 1|0: 178, 1|1: 181
+
+```
+less -S HG00100.vcf | grep -v "#" | cut -f 9,10 | sort | uniq -c
+```
+
+5. d) I THINK AF=1 is in 34 rows. Here's the code:
+
+```
+less -S HG00100.vcf | grep "AF=1" | cut -f 8 | sort | uniq -c | wc
+```
+
+5. e) AF=1 can appear 6 times in a row.
+5. f) You could run the script again but search specifically for "AFR_AF="
