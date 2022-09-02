@@ -3,3 +3,6 @@ A- so the tosses array creates a proper array as written, the probs array prints
 B- I did.
 
 C- I went with a grayscale, wasn't the prettiest but very accesible. For the non corrected p-values there was clear loss of power as sample sizes and probabilities increased. For corrected p-values, power remained very strong as probablities became less fair, so long as sample size was very low. I believe this means we had an easier time distinguishing unfair coins?
+
+D- This paper is focusing on Transmission Distortion, which is the unequal distribution of alleles by sperm. Typically distribution is thought to be equally split per Mendel's Law of Segregation. There are definitely parallels between the graphs in the figure S13 and our graph. In both graphs we  see stronger power values on the heatmap when we correct p-values. The biggest difference I notice is that power values seem stay stronger as you move up in number of sperm, where as they got weaker as we moved up in coinflip iterations.
+Prob_heads corresponds to transmission rate and number of iterations corresponds to number of sperm. My coinflip uses binomial test because I can either get heads or tails, making for 2 choices. Similarly, there are two copies of an allele available for a diploid heterozygote, leading to two possible choices of distribution.
