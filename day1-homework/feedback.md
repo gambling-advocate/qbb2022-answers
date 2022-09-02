@@ -1,0 +1,3 @@
+# Feedback
+
+Overall this looks really good. For part 2, your script looks correct, but you output is missing so I can't say for sure that it produces the correct answer. The 3rd part also looks good. You are missing the commands you used to get the number of variants and genes after running your exercise3.sh script. The number of variants is correct, but the number of genes should be 200, not 4. All in all, you did a great job with this assignment and you appear to understand awk well enough to use it, which is no small feat. Keep up the good work!
