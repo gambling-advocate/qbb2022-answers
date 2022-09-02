@@ -1,0 +1,5 @@
+A- so the tosses array creates a proper array as written, the probs array prints an array that equals `[1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55]` and i think that's because of the [::-1] and the values inside of the (). They must mean to start at 0.55, go up to 1.05, not including 1.05, in increments of 0.05. I think the decimals=2 rounds the function off. We reverse the values so that our lowest probability values starts at the bottom of our y-axis and moves up.
+
+B- I did.
+
+C- I went with a grayscale, wasn't the prettiest but very accesible. For the non corrected p-values there was clear loss of power as sample sizes and probabilities increased. For corrected p-values, power remained very strong as probablities became less fair, so long as sample size was very low. I believe this means we had an easier time distinguishing unfair coins?
