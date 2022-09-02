@@ -1,0 +1,2 @@
+3. There is a significant relationship between maternal age and maternally inherited de novo mutations. The p-value is 6.878e-24. The size of this relationship is that for every 1 year increase in age, we expect about 0.3776 increase in De novo mutations.
+4.
