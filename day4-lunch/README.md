@@ -49,7 +49,7 @@ OUTPUT
 
 	EX: 
 	```
-	*** Creating .bed files for features of interest
+	*** Creating .bed files for features of interesting
 	--- Creating exons.chr21.bed
 	*** Subsetting .vcf for each feature
 	--- Subsetting exons.chr21.bed.vcf

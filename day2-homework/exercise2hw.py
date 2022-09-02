@@ -34,5 +34,5 @@ for i,things in enumerate(rs):
         things[2] = db_IDs[(chrom, pos, ref)]
     else:
         counter = counter + 1
-        print(counter)
+print(counter)
         
