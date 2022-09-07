@@ -1,0 +1,3 @@
+# Feedback day2-homework
+
+Your annotation of the VCF parser looks good. Your comments were clear and you appeared to understand what each part of the code was doing and why. Your annotation code also looks good. You appear to understand the basics of using dictionaries and how to use them. The only peice of feeback I have is that because the genotyping is being performed without a reference, it decides which base is the reference based on which has the highest frequency. This means that there is no gaurentee that the reference in the two files will match, and in 25 cases, they don't. But there is no reason you would know that at this point and your choice of key makes sense. You're doing great, keep it up!
