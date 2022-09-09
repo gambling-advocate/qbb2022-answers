@@ -1,3 +1,25 @@
+1. I first sorted the aau1043_dnm.csv file using:
+
+`sort -t ',' -k 5,6 aau1043_dnm.csv | cut -d, -f5,6 | uniq -c | grep 'mother\|father' > DNMperproband.txt`
+
+1. I then separated the file into two files into maternal and paternal DNMs.
+
+```
+ grep 'mother' DNMperproband.csv | cut -d, -f1,2 > motherDNM.csv
+ grep 'father' DNMperproband.csv | cut -d, -f1,2 > fatherDNM.csv
+```
+
+1. I then rejoined these files into a new file and the sorted that file numerically.
+```
+join -1 2 -2 2 -t, fatherDNM.csv motherDNM.csv > DNMperproband.csv
+sort -g DNMperproband.csv > sortedDNMperproband.csv 
+```
+
+1. I then joined that file with the parental age file and created the final sorted file.
+
+`join -t ',' sorted_DNMperproband.csv aau1043_parental_age.csv > finalsort.csv`
+
+
 3. There is a significant relationship between maternal age and maternally inherited de novo mutations. The p-value is 6.878e-24. The size of this relationship is that for every 1 year increase in age, we expect about 0.3776 increase in De novo mutations.
 
 4. There is a significant relationship between maternal age and maternally inherited de novo mutations. The p-value is 1.552e-84. The size of this relationship is that for every 1 year increase in age, we expect about 1.3538 increase in De novo mutations.
