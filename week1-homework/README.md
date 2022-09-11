@@ -11,4 +11,4 @@ zero = x == 0
 meh = np.count_nonzero(zero)
 ```
 
-1.4 did it, code uploaded in question1_4.py and histograms.
+1.4 did it, code uploaded in question1_4.py and histograms. I got about 8 bp not covered
