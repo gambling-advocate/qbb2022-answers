@@ -21,12 +21,13 @@ x = np.array(genome)
 zero = x == 0
 meh = np.count_nonzero(zero)
 
+print(range(meh))
 
 #plotting the array into a histogram and setting a poisson pmf with a lambda of 5
-fig, ax = plt.subplots()
-ax.hist(x, density = True)
-ax.plot(x, poisson.pmf(x, mu = 15), 'bo')
-ax.set_ylabel("frequency")
-ax.set_xlabel("coverage")
-plt.savefig("14hist")
+# fig, ax = plt.subplots()
+# ax.hist(x, density = True)
+# ax.plot(x, poisson.pmf(x, mu = 15), 'bo')
+# ax.set_ylabel("frequency")
+# ax.set_xlabel("coverage")
+# plt.savefig("14hist")
 # plt.show()
