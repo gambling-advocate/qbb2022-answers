@@ -47,4 +47,4 @@ samtools index AllH2s.bam
 ```
 
 #Part 6: Find and plot methylated regions
-all images are uploaded under their chromosome names. Except for some reason, even though my file length is about 
+all images are uploaded under their chromosome names. Except for some reason, even though my file length is about where it should be, igv will not load in either chr20 data set. The screen remains blank and I'll try to troubleshoot.
