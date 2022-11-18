@@ -87,6 +87,5 @@ for i in range(waterlogged.shape[0]):
     longdf = np.array(list_of_tuples, dtype=[('transcript', 'S11'), ('fpkm', float), ('sex', 'S6'), ('stage', int)])
     model = statsmodels.formula.api.ols(formula = 'fpkm ~ 1 + stage' , data = longdf, subset=None, drop_cols=None)
     results = model.fit()
-print(results.params)
-print(results.summary)
+    p_val.append(results.pvalues)
 print(results.pvalues)
