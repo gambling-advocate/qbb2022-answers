@@ -1,0 +1,1 @@
+I tried to do the labeled uMAP for part 4.2, but it wanted me to use Pandas ".map" function which I wasn't familiar with. I tried it but I couldn't get it to work... For that reason I just included the clusters and what cell types I thought they were in the bottom of the code.
