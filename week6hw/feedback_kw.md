@@ -1,6 +1,6 @@
 ## Week 6 -- 10 points possible
 
-_ + _ + _ + _ + _ + _ + _ + _ + _ + _ = _ of 10 points possible
+1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = 13 of 10 points possible
 
 1. Given data question: What percentage of reads are valid interactions?
 
@@ -25,12 +25,16 @@ _ + _ + _ + _ + _ + _ + _ + _ + _ + _ = _ of 10 points possible
 
 8. Turned in the plot of the 3 heatmaps (ddCTCF, dCTCF, and difference) for subset dataset (0.33 pts each ddCTCF/dCTCF/difference)
 
+* heatmap was blank?
+
 9. Turned in the plot of the 3 heatmaps (ddCTCF, dCTCF, and difference) for full dataset (0.33 pts each ddCTCF/dCTCF/difference)
+
+* heatmap was blank?
 
 10. Heatmap questions (0.33 pts each)
 
   * See the highlighted difference from the original figure?
-  * impact of sequencing depth?
+  * impact of sequencing depth? --> increased sequencing depth decreases noise/smooths the signal in the data
   * highlighted signal indicates?
 
 Possible Bonus points:
